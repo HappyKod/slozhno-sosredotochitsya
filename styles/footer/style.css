@@ -11,8 +11,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color, #FF0070);
-  border-right: 1px solid var(--accent-color, #FF0070);
+  border-top: 1px solid var(--accent-color-elements, #FF0070);
+  border-right: 1px solid var(--accent-color-elements, #FF0070);
   top: var(--global-padding, 20px);
   right: var(--global-padding, 20px);
 }
@@ -22,8 +22,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color, #FF0070);
-  border-left: 1px solid var(--accent-color, #FF0070);
+  border-bottom: 1px solid var(--accent-color-elements, #FF0070);
+  border-left: 1px solid var(--accent-color-elements, #FF0070);
   bottom: var(--global-padding, 20px);
   left: var(--global-padding, 20px);
 }

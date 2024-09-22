@@ -7,10 +7,6 @@
 .header {
   position: relative;
   min-height: max(668px, 100vh);
-  background-image: url("../../images/cover-image-dark.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 
   padding: var(--global-padding, 20px) 0 var(--global-padding, 20px) 0;
 
@@ -23,8 +19,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color, #FF0070);
-  border-left: 1px solid var(--accent-color, #FF0070);
+  border-bottom: 1px solid var(--accent-color-elements, #FF0070);
+  border-left: 1px solid var(--accent-color-elements, #FF0070);
   bottom: var(--global-padding, 20px);
   left: var(--global-padding, 20px);
 }
@@ -34,8 +30,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color, #FF0070);
-  border-right: 1px solid var(--accent-color, #FF0070);
+  border-top: 1px solid var(--accent-color-elements, #FF0070);
+  border-right: 1px solid var(--accent-color-elements, #FF0070);
   top: var(--global-padding, 20px);
   right: var(--global-padding, 20px);
 }
@@ -75,18 +71,32 @@
   cursor: pointer;
   text-transform: lowercase;
   border: 0;
-  color: var(--accent-color, #FF0070);
+  color: var(--accent-color-elements, #FF0070);
   padding: 0 13px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   text-align: center;
   background: transparent;
+  border-bottom: 1px transparent solid;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px var(--accent-color-elements, #FF0070) solid;
+}
+
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  outline: 1px solid rgba(var(--accent-color-rgb), 0.4);
 }
 
 .header__theme-menu-button_active {
   cursor: auto;
-  outline: 1px var(--accent-color, #FF0070) solid;
+  outline: 1px var(--accent-color-elements, #FF0070) solid;
+  pointer-events: none;
 }
 
 .header__title {
@@ -107,11 +117,7 @@
   width: 491px;
 
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 130%;
-
-
 }
 
 

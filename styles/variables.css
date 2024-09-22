@@ -5,6 +5,7 @@
 
 :root {
   --accent-color: #FF0070;
+  --accent-color-rgb: 255, 0, 112;
   --global-padding: 20px; /*Глобальный padding для удобного изменения под мобильник (10px)*/
   --tittle-color: #DB00FF;
   --titile-article-color: #000028;
