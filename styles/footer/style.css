@@ -6,28 +6,6 @@
   align-items: center;
 }
 
-.footer::before {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--accent-color-elements, #FF0070);
-  border-right: 1px solid var(--accent-color-elements, #FF0070);
-  top: var(--global-padding, 20px);
-  right: var(--global-padding, 20px);
-}
-
-.footer::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--accent-color-elements, #FF0070);
-  border-left: 1px solid var(--accent-color-elements, #FF0070);
-  bottom: var(--global-padding, 20px);
-  left: var(--global-padding, 20px);
-}
-
 .footer__title {
   text-align: center;
   color: var(--tittle-color, #DB00FF);

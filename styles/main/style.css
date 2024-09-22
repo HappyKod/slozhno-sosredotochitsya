@@ -39,10 +39,10 @@
   color: var(--text-color, #F1B2CE);
 }
 
-.section__why_list {
-  grid-column: 2;
-  flex-direction: column;
-}
+/*.section__why_list {*/
+/*  grid-column: 2;*/
+/*  flex-direction: column;*/
+/*}*/
 
 .section__what__label {
   grid-column: 1;
@@ -65,7 +65,7 @@
   color: var(--titile-article-color, #000028);
 }
 
-.section__how_list {
+.section__why_how_list {
   grid-column: 2;
   flex-direction: column;
 }
@@ -157,10 +157,9 @@
   .main__section {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
-  .section__how_list,
+  .section__why_how_list,
   .section__how__addition {
     margin-left: 0;
   }

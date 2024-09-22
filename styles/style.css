@@ -13,3 +13,25 @@
 .title-decor {
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
 }
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color-elements, #FF0070);
+  border-left: 1px solid var(--accent-color-elements, #FF0070);
+  bottom: var(--global-padding, 20px);
+  left: var(--global-padding, 20px);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color-elements, #FF0070);
+  border-right: 1px solid var(--accent-color-elements, #FF0070);
+  top: var(--global-padding, 20px);
+  right: var(--global-padding, 20px);
+}
