@@ -44,10 +44,11 @@
   flex-direction: column;
 }
 
-.section__what__label{
+.section__what__label {
   grid-column: 1;
 }
-.section__what_list{
+
+.section__what_list {
   grid-column: 1/3;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -63,6 +64,7 @@
   background-color: var(--accent-color, #FF0070);
   color: var(--titile-article-color, #000028);
 }
+
 .section__how_list {
   grid-column: 2;
   flex-direction: column;
@@ -123,7 +125,7 @@
 }
 
 .text-link:hover {
-  outline: 1px solid var(--text-color,#F1B2CE);
+  outline: 1px solid var(--text-color, #F1B2CE);
 }
 
 @media (width <= 768px) {
@@ -153,7 +155,7 @@
   }
 
   .section__how_list,
-  .section__how__addition{
+  .section__how__addition {
     margin-left: 0;
   }
 
@@ -170,13 +172,15 @@
   .section__picture_sunset {
     height: 142px;
   }
+
   .section__picture_ice-cream {
     height: 355px;
   }
 
-  .section__picture_books{
+  .section__picture_books {
     height: 355px;
   }
+
   .section__picture_tape {
     height: 237px;
   }
