@@ -1,0 +1,155 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+
+.page {
+  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+
+.header {
+  position: relative;
+  min-height: max(668px, 100vh);
+  background-image: url("../../images/cover-image-dark.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: var(--global-padding, 20px) 0 var(--global-padding, 20px) 0;
+
+  display: grid;
+  grid-template-rows: 41% 33.5%;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color, #FF0070);
+  border-left: 1px solid var(--accent-color, #FF0070);
+  bottom: var(--global-padding, 20px);
+  left: var(--global-padding, 20px);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color, #FF0070);
+  border-right: 1px solid var(--accent-color, #FF0070);
+  top: var(--global-padding, 20px);
+  right: var(--global-padding, 20px);
+}
+
+.decorative-records {
+  position: absolute;
+  top: var(--global-padding, 20px);
+  right: calc(var(--global-padding, 20px) + 3px + 25px - 19px);
+  color: var(--accent-color, #FF0070);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.decorative-records:after{
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #FF0070;
+  border-radius: 100%;
+  fill: #ff0070;
+  box-shadow: 0 0 4px 2px #ff0070;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  cursor: pointer;
+  text-transform: lowercase;
+  border: 0;
+  color: var(--accent-color, #FF0070);
+  padding: 0 13px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  background: transparent;
+}
+
+.header__theme-menu-button_active {
+  cursor: auto;
+  outline: 1px var(--accent-color, #FF0070) solid;
+}
+
+.header__title {
+  color: var(--tittle-color,#DB00FF);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.header__description {
+  margin: 0 var(--global-padding, 20px);
+  background-color: var(--accent-color, #FF0070);
+  color: var(--titile-article-color, #000028);
+  align-self: start;
+  justify-self: right;
+
+  width: 491px;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+
+
+}
+
+
+@media (width <= 768px) {
+  .header {
+    grid-template-rows: 45% 26.5%;
+  }
+
+  .header__theme-menu {
+    align-self: center;
+  }
+  .header__theme-menu-list {
+    margin-right: var(--global-padding, 20px);
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .header__description {
+    width: min(364px, 100%);
+  }
+
+  .header__title {
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  }
+}
+
+
+@media (width <= 595px) {
+  .header {
+    padding: var(--global-padding, 20px);
+    grid-template-rows: 35% 38.3%;
+  }
+
+
+
+  .header__description {
+    width: 355px;
+    margin-left: 0;
+  }
+}
