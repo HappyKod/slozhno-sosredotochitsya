@@ -2,6 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bg-color, #FFC2E6);
   background-image: url("../images/cover-image-dark.png");
   background-attachment: fixed;
   background-position: center;
