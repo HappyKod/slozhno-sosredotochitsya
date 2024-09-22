@@ -70,8 +70,14 @@
   flex-direction: column;
 }
 
+
 .not_bold {
   font-weight: 400;
+}
+
+.section__picture {
+  display: flex;
+  flex-direction: column;
 }
 
 .section__picture__label {
