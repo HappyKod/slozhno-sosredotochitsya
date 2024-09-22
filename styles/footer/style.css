@@ -42,4 +42,7 @@
     margin-top: 10px;
     padding: var(--global-padding, 20px) var(--global-padding, 20px) var(--global-padding, 20px) var(--global-padding, 20px);
   }
+  .footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
 }
