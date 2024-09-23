@@ -39,10 +39,9 @@
   color: var(--text-color, #F1B2CE);
 }
 
-/*.section__why_list {*/
-/*  grid-column: 2;*/
-/*  flex-direction: column;*/
-/*}*/
+.title-decor {
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+}
 
 .section__what__label {
   grid-column: 1;
@@ -119,6 +118,7 @@
 
 .text-link {
   text-decoration: none;
+  border-bottom: 2px transparent solid;
 }
 
 .text-link:focus {
@@ -126,12 +126,13 @@
 }
 
 .text-link:focus-visible {
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color-elements, #FF0070);
+  outline: 1px solid var(--text-color, #F1B2CE);
 }
 
 .text-link:hover {
-  outline: 1px solid var(--text-color, #F1B2CE);
+  /*text-decoration: underline;*/
+  /*text-decoration-color: var(--text-color, #FF0070);*/
+  border-bottom: 2px var(--text-color, #FF0070) solid;
 }
 
 @media (width <= 768px) {

@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
 }
 
-.title-decor {
+.focus_shadow {
   text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
 }
 
